@@ -23,9 +23,16 @@ export const metadata: Metadata = {
   creator: "Grace Garden",
   publisher: "Grace Garden",
   icons: {
-    icon: '/images/Logo.jpg',
-    shortcut: '/images/Logo.jpg',
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
     apple: '/images/Logo.jpg',
+    other: [
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        url: '/favicon.ico',
+      },
+    ],
   },
   robots: {
     index: true,
