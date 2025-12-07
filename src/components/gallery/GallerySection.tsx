@@ -65,17 +65,6 @@ export default function GallerySection() {
                 {/* Masonry Grid */}
                 <MasonryGrid items={filteredItems} onItemClick={setSelectedItem} />
 
-                {/* Privacy Notice */}
-                <div className="mt-12 text-center">
-                    <p className="text-sm text-slate-600">
-                        Images displayed with consent. To request removal,{' '}
-                        <a href="/privacy" className="text-primary hover:underline">
-                            contact us
-                        </a>
-                        .
-                    </p>
-                </div>
-
                 {/* Lightbox Modal */}
                 <AnimatePresence>
                     {selectedItem && (
