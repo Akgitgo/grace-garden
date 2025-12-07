@@ -25,7 +25,7 @@ export default function Testimonials() {
         {
             id: 't1',
             type: 'image',
-            src: '/images/test1.png',
+            src: '/images/test1.jpg',
             alt: 'Testimonial image 1',
             title: 'Diabetic Camp',
             category: 'testimonials',
@@ -45,7 +45,7 @@ export default function Testimonials() {
         {
             id: 't3',
             type: 'image',
-            src: '/images/test2.png',
+            src: '/images/test2.jpg',
             alt: 'Testimonial image 2',
             title: 'Peaceful Living',
             category: 'testimonials',

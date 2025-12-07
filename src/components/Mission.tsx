@@ -40,7 +40,7 @@ export default function Mission() {
                     {/* Fixed Background Image */}
                     <div
                         className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
-                        style={{ backgroundImage: "url('/images/MISSIONBG.png')" }}
+                        style={{ backgroundImage: "url('/images/MISSIONBG.jpg')" }}
                     />
 
                     {/* Dark Overlay */}

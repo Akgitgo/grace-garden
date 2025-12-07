@@ -95,7 +95,7 @@ export default function Header() {
                       aria-label="Grace Garden - Scroll to top"
                     >
                       <Image
-                        src="/images/Logo.png"
+                        src="/images/Logo.jpg"
                         alt="Grace Garden Logo"
                         width={100}
                         height={32}
@@ -161,7 +161,7 @@ export default function Header() {
                       aria-label="Grace Garden - Scroll to top"
                     >
                       <Image
-                        src="/images/Logo.png"
+                        src="/images/Logo.jpg"
                         alt="Grace Garden Logo"
                         width={160}
                         height={50}

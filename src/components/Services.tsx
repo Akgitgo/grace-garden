@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { HeartPulse, UtensilsCrossed, Music, MountainSnow, UserCheck, Armchair, Package, ClipboardList, Clock, Shield, Settings, Briefcase } from 'lucide-react';
 
 export default function Services() {
@@ -62,17 +63,27 @@ export default function Services() {
         {/* Assisted Living Banner Image */}
         <div className="relative w-full h-[500px] md:h-[600px] mb-8 rounded-2xl overflow-hidden shadow-lg">
           {/* Mobile Image */}
-          <div
-            className="absolute inset-0 bg-cover bg-center md:hidden"
-            style={{ backgroundImage: "url('/images/assisstedlivingphone.png')" }}
+          <Image
+            src="/images/assisstedlivingphone.jpg"
+            alt="Assisted Living Service - Comprehensive residential care"
+            fill
+            quality={85}
+            sizes="(max-width: 768px) 100vw, 0vw"
+            className="object-cover md:hidden"
+            loading="lazy"
           />
           {/* Desktop Image */}
-          <div
-            className="absolute inset-0 bg-cover bg-center hidden md:block"
-            style={{ backgroundImage: "url('/images/assisstedlivingservice.png')" }}
+          <Image
+            src="/images/assisstedlivingservice.jpg"
+            alt="Assisted Living Service - Professional elderly care"
+            fill
+            quality={85}
+            sizes="(min-width: 768px) 100vw, 0vw"
+            className="object-cover hidden md:block"
+            loading="lazy"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent" />
-          <div className="relative z-10 h-full flex items-end px-8 md:px-12 pb-8 md:pb-12">
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent z-10" />
+          <div className="relative z-20 h-full flex items-end px-8 md:px-12 pb-8 md:pb-12">
             <p className="text-white text-lg md:text-xl lg:text-2xl font-medium leading-relaxed max-w-3xl">
               Comprehensive residential care in our serene Wayanad facility, offering 24/7 support, medical assistance, and a vibrant community lifestyle for your loved ones.
             </p>
@@ -121,17 +132,27 @@ export default function Services() {
         {/* Home Care Banner Image */}
         <div className="relative w-full h-[500px] md:h-[600px] mb-8 rounded-2xl overflow-hidden shadow-lg">
           {/* Mobile Image */}
-          <div
-            className="absolute inset-0 bg-cover bg-center md:hidden"
-            style={{ backgroundImage: "url('/images/homeservicephone.png')" }}
+          <Image
+            src="/images/homeservicephone.jpg"
+            alt="Home Care Service - Professional care at home"
+            fill
+            quality={85}
+            sizes="(max-width: 768px) 100vw, 0vw"
+            className="object-cover md:hidden"
+            loading="lazy"
           />
           {/* Desktop Image */}
-          <div
-            className="absolute inset-0 bg-cover bg-center hidden md:block"
-            style={{ backgroundImage: "url('/images/Homeservice.png')" }}
+          <Image
+            src="/images/Homeservice.jpg"
+            alt="Home Care Service - Certified caregivers"
+            fill
+            quality={85}
+            sizes="(min-width: 768px) 100vw, 0vw"
+            className="object-cover hidden md:block"
+            loading="lazy"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent" />
-          <div className="relative z-10 h-full flex items-end px-8 md:px-12 pb-8 md:pb-12">
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent z-10" />
+          <div className="relative z-20 h-full flex items-end px-8 md:px-12 pb-8 md:pb-12">
             <p className="text-white text-lg md:text-xl lg:text-2xl font-medium leading-relaxed max-w-3xl">
               Professional care delivered in the comfort of your own home, with certified caregivers providing personalized support, nursing care, and flexible service packages tailored to your needs.
             </p>
