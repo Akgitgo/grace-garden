@@ -61,8 +61,14 @@ export default function Services() {
 
         {/* Assisted Living Banner Image */}
         <div className="relative w-full h-[500px] md:h-[600px] mb-8 rounded-2xl overflow-hidden shadow-lg">
+          {/* Mobile Image */}
           <div
-            className="absolute inset-0 bg-cover bg-center"
+            className="absolute inset-0 bg-cover bg-center md:hidden"
+            style={{ backgroundImage: "url('/images/assisstedlivingphone.png')" }}
+          />
+          {/* Desktop Image */}
+          <div
+            className="absolute inset-0 bg-cover bg-center hidden md:block"
             style={{ backgroundImage: "url('/images/assisstedlivingservice.png')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent" />
@@ -114,8 +120,14 @@ export default function Services() {
 
         {/* Home Care Banner Image */}
         <div className="relative w-full h-[500px] md:h-[600px] mb-8 rounded-2xl overflow-hidden shadow-lg">
+          {/* Mobile Image */}
           <div
-            className="absolute inset-0 bg-cover bg-center"
+            className="absolute inset-0 bg-cover bg-center md:hidden"
+            style={{ backgroundImage: "url('/images/homeservicephone.png')" }}
+          />
+          {/* Desktop Image */}
+          <div
+            className="absolute inset-0 bg-cover bg-center hidden md:block"
             style={{ backgroundImage: "url('/images/Homeservice.png')" }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent" />

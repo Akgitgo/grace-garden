@@ -147,9 +147,9 @@ export const galleryItems: MediaItem[] = [
         id: 'fac-2',
         type: 'image',
         category: 'facilities',
-        src: '/images/double.JPG',
-        alt: 'Comfortable bedroom with modern amenities',
-        title: 'Private Room',
+        src: '/images/TV.JPG',
+        alt: 'Comfortable recreation lounge with television and seating',
+        title: 'Recreation Lounge',
         width: 1000,
         height: 750,
         consentSigned: true

@@ -53,7 +53,7 @@ export default function FeaturedCarousel({ items }: FeaturedCarouselProps) {
                             {currentItem.title}
                         </h3>
                         {currentItem.caption && (
-                            <p className="text-lg text-white/90 mb-6 max-w-2xl">
+                            <p className="text-lg text-white/90 mb-6 max-w-2xl hidden md:block">
                                 {currentItem.caption}
                             </p>
                         )}

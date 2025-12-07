@@ -26,7 +26,7 @@ export default function Mission() {
     const textOpacity = useTransform(scrollYProgress, [0.2, 0.4], [0.8, 1]);
 
     return (
-        <div ref={containerRef} className="relative h-[200vh] bg-white">
+        <div ref={containerRef} className="relative h-[200vh]">
             {/* Sticky Container - Stays fixed while we scroll through the 200vh height */}
             <div className="sticky top-0 h-screen w-full overflow-hidden flex items-center justify-center">
 

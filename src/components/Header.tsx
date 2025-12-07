@@ -61,7 +61,7 @@ export default function Header() {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -100, opacity: 0 }}
               transition={{ duration: 0.3, ease: 'easeOut' }}
-              className="flex justify-center pt-4 px-4"
+              className="flex justify-center pt-2 px-4"
             >
               <nav
                 className="bg-white/8 backdrop-blur-md border border-white/10 rounded-full shadow-lg px-6 md:px-8 py-3 max-w-6xl w-full"
@@ -127,7 +127,7 @@ export default function Header() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="px-4 py-4 md:py-6"
+              className="px-4 py-2 md:py-3"
             >
               <nav
                 className="max-w-7xl mx-auto"
