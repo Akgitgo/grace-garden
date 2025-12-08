@@ -22,17 +22,15 @@ export const metadata: Metadata = {
   authors: [{ name: "Grace Garden" }],
   creator: "Grace Garden",
   publisher: "Grace Garden",
+  manifest: '/site.webmanifest',
+  themeColor: '#ffffff',
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/images/Logo.jpg',
-    other: [
-      {
-        rel: 'icon',
-        type: 'image/x-icon',
-        url: '/favicon.ico',
-      },
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' }
     ],
+    apple: '/apple-touch-icon.png',
   },
   robots: {
     index: true,
@@ -48,16 +46,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://www.gracegarden.co.in',
+    url: 'https://gracegarden.co.in',
     siteName: 'Grace Garden',
     title: 'Grace Garden - Professional Elder Care & Assisted Living in Wayanad',
     description: 'Compassionate assisted living and home care services for seniors in Wayanad, Kerala. 24/7 medical care, nutritious meals, and vibrant community lifestyle.',
     images: [
       {
-        url: '/images/Exterior-View.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Grace Garden Senior Living Care Home Exterior',
+        url: 'https://gracegarden.co.in/site-icon-512.png',
+        width: 512,
+        height: 512,
+        alt: 'Grace Garden Logo',
       },
     ],
   },
@@ -65,7 +63,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Grace Garden - Elder Care in Wayanad',
     description: 'Professional assisted living and home care services for seniors in Wayanad, Kerala.',
-    images: ['/images/Exterior-View.jpg'],
+    images: ['https://gracegarden.co.in/site-icon-512.png'],
   },
   verification: {
     google: 'your-google-verification-code', // Replace with actual code
