@@ -22,16 +22,6 @@ export const metadata: Metadata = {
   authors: [{ name: "Grace Garden" }],
   creator: "Grace Garden",
   publisher: "Grace Garden",
-  manifest: '/site.webmanifest',
-  themeColor: '#ffffff',
-  icons: {
-    icon: [
-      { url: '/favicon.ico' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' }
-    ],
-    apple: '/apple-touch-icon.png',
-  },
   robots: {
     index: true,
     follow: true,
@@ -42,43 +32,6 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  openGraph: {
-    type: 'website',
-    locale: 'en_IN',
-    url: 'https://gracegarden.co.in',
-    siteName: 'Grace Garden',
-    title: 'Grace Garden - Professional Elder Care & Assisted Living in Wayanad',
-    description: 'Compassionate assisted living and home care services for seniors in Wayanad, Kerala. 24/7 medical care, nutritious meals, and vibrant community lifestyle.',
-    images: [
-      {
-        url: 'https://gracegarden.co.in/site-icon-512.png',
-        width: 512,
-        height: 512,
-        alt: 'Grace Garden Logo',
-      },
-      {
-        url: 'https://gracegarden.co.in/apple-touch-icon.png',
-        width: 180,
-        height: 180,
-        alt: 'Grace Garden Icon',
-      },
-      {
-        url: 'https://gracegarden.co.in/images/Logo.jpg',
-        width: 1200,
-        height: 1200,
-        alt: 'Grace Garden Official Logo',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Grace Garden - Elder Care in Wayanad',
-    description: 'Professional assisted living and home care services for seniors in Wayanad, Kerala.',
-    images: [
-      'https://gracegarden.co.in/site-icon-512.png',
-      'https://gracegarden.co.in/images/Logo.jpg'
-    ],
   },
   verification: {
     google: 'your-google-verification-code', // Replace with actual code
@@ -97,6 +50,21 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <StructuredData />
+        {/* --- Canonical favicon + PWA manifest (Grace Garden) --- */}
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="theme-color" content="#ffffff" />
+
+        {/* --- Canonical Open Graph / Twitter image (single source) --- */}
+        <meta property="og:image" content="https://gracegarden.co.in/site-icon-512.png" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+        <meta property="og:image:alt" content="Grace Garden Logo" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://gracegarden.co.in/site-icon-512.png" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
