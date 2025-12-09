@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
-
+import StructuredData from "@/components/StructuredData";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
 
 const geistSans = Geist({
@@ -57,16 +57,34 @@ export const metadata: Metadata = {
         height: 512,
         alt: 'Grace Garden Logo',
       },
+      {
+        url: 'https://gracegarden.co.in/apple-touch-icon.png',
+        width: 180,
+        height: 180,
+        alt: 'Grace Garden Icon',
+      },
+      {
+        url: 'https://gracegarden.co.in/images/Logo.jpg',
+        width: 1200,
+        height: 1200,
+        alt: 'Grace Garden Official Logo',
+      },
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Grace Garden - Elder Care in Wayanad',
     description: 'Professional assisted living and home care services for seniors in Wayanad, Kerala.',
-    images: ['https://gracegarden.co.in/site-icon-512.png'],
+    images: [
+      'https://gracegarden.co.in/site-icon-512.png',
+      'https://gracegarden.co.in/images/Logo.jpg'
+    ],
   },
   verification: {
     google: 'your-google-verification-code', // Replace with actual code
+  },
+  other: {
+    'google-site-verification': 'your-google-verification-code',
   },
 };
 
@@ -77,6 +95,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <StructuredData />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

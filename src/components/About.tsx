@@ -87,19 +87,6 @@ export default function About() {
                   "{member.quote}"
                 </p>
               )}
-
-              {/* Social Icons */}
-              <div className="flex space-x-3 mt-auto pt-3">
-                <a href="#" className="p-2 text-primary/60 hover:text-primary hover:bg-emerald-50 rounded-full transition-all duration-200">
-                  <Facebook size={18} />
-                </a>
-                <a href="#" className="p-2 text-primary/60 hover:text-primary hover:bg-emerald-50 rounded-full transition-all duration-200">
-                  <Twitter size={18} />
-                </a>
-                <a href="#" className="p-2 text-primary/60 hover:text-primary hover:bg-emerald-50 rounded-full transition-all duration-200">
-                  <Linkedin size={18} />
-                </a>
-              </div>
             </div>
           ))}
         </div>

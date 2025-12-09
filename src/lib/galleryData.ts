@@ -33,6 +33,19 @@ export const galleryItems: MediaItem[] = [
         date: '2024-12-01'
     },
     {
+        id: 'res-4',
+        type: 'video',
+        category: 'residents',
+        src: '/videos/residents-activity.mp4',
+        poster: '/images/residents-4-poster.jpg',
+        alt: 'Group activity session',
+        title: 'Activity Time',
+        width: 1920,
+        height: 1080,
+        duration: '2:15',
+        consentSigned: true
+    },
+    {
         id: 'res-2',
         type: 'image',
         category: 'residents',
@@ -45,6 +58,41 @@ export const galleryItems: MediaItem[] = [
         featured: true,
         consentSigned: true,
         date: '2024-11-28'
+    },
+    {
+        id: 'res-3',
+        type: 'image',
+        category: 'residents',
+        src: '/images/residents-3.jpeg',
+        alt: 'Residents enjoying Blessing Event',
+        title: 'Blessing Event',
+        width: 800,
+        height: 600,
+        consentSigned: true
+    },
+    {
+        id: 'res-7',
+        type: 'video',
+        category: 'residents',
+        src: '/videos/happyresidents.mp4',
+        poster: '/images/residents-1.jpeg',
+        alt: 'Happy residents daily life moments',
+        title: 'Happy Residents',
+        width: 1920,
+        height: 1080,
+        duration: '2:30',
+        consentSigned: true
+    },
+    {
+        id: 'res-5',
+        type: 'image',
+        category: 'residents',
+        src: '/images/Exterior-View.jpg',
+        alt: 'Exterior View of GG',
+        title: 'Exterior View',
+        width: 900,
+        height: 600,
+        consentSigned: true
     },
     // Facilities - Featured
     {
@@ -61,7 +109,19 @@ export const galleryItems: MediaItem[] = [
         consentSigned: true,
         date: '2024-12-02'
     },
-    // New Room Images
+    {
+        id: 'fac-4',
+        type: 'video',
+        category: 'facilities',
+        src: '/videos/facility-tour.mp4',
+        poster: '/images/facility-4-poster.jpg',
+        alt: 'Facility tour video',
+        title: 'Room Tour',
+        width: 1920,
+        height: 1080,
+        duration: '3:45',
+        consentSigned: true
+    },
     {
         id: 'fac-elegant',
         type: 'image',
@@ -82,6 +142,19 @@ export const galleryItems: MediaItem[] = [
         title: 'Elite Room',
         width: 1200,
         height: 800,
+        consentSigned: true
+    },
+    {
+        id: 'fac-7',
+        type: 'video',
+        category: 'facilities',
+        src: '/videos/facilitiesandroom.mp4',
+        poster: '/images/facility-1.jpg',
+        alt: 'Facilities and room tour',
+        title: 'Facilities Tour',
+        width: 1920,
+        height: 1080,
+        duration: '3:00',
         consentSigned: true
     },
     {
@@ -106,54 +179,6 @@ export const galleryItems: MediaItem[] = [
         height: 800,
         consentSigned: true
     },
-    // Residents
-    {
-        id: 'res-3',
-        type: 'image',
-        category: 'residents',
-        src: '/images/residents-3.jpeg',
-        alt: 'Residents enjoying gardening activity',
-        title: 'Garden Therapy',
-        width: 800,
-        height: 600,
-        consentSigned: true
-    },
-    {
-        id: 'res-4',
-        type: 'video',
-        category: 'residents',
-        src: '/videos/residents-activity.mp4',
-        poster: '/images/residents-4-poster.jpg',
-        alt: 'Group activity session',
-        title: 'Activity Time',
-        width: 1920,
-        height: 1080,
-        duration: '2:15',
-        consentSigned: true
-    },
-    {
-        id: 'res-5',
-        type: 'image',
-        category: 'residents',
-        src: '/images/Exterior-View.jpg',
-        alt: 'Exterior View of GG',
-        title: 'Exterior View',
-        width: 900,
-        height: 600,
-        consentSigned: true
-    },
-    // Facilities
-    {
-        id: 'fac-2',
-        type: 'image',
-        category: 'facilities',
-        src: '/images/TV.JPG',
-        alt: 'Comfortable recreation lounge with television and seating',
-        title: 'Recreation Lounge',
-        width: 1000,
-        height: 750,
-        consentSigned: true
-    },
     {
         id: 'fac-3',
         type: 'image',
@@ -166,20 +191,6 @@ export const galleryItems: MediaItem[] = [
         consentSigned: true
     },
     {
-        id: 'fac-4',
-        type: 'video',
-        category: 'facilities',
-        src: '/videos/facility-tour.mp4',
-        poster: '/images/facility-4-poster.jpg',
-        alt: 'Facility tour video',
-        title: 'Facility Tour',
-        width: 1920,
-        height: 1080,
-        duration: '3:45',
-        consentSigned: true
-    },
-
-    {
         id: 'fac-6',
         type: 'image',
         category: 'facilities',
@@ -188,17 +199,6 @@ export const galleryItems: MediaItem[] = [
         title: 'Medical Care',
         width: 900,
         height: 700,
-        consentSigned: true
-    },
-    {
-        id: 'res-6',
-        type: 'image',
-        category: 'residents',
-        src: '/images/chess.JPG',
-        alt: 'Chess Game going on',
-        title: 'Chess Time',
-        width: 800,
-        height: 650,
         consentSigned: true
     }
 ];
