@@ -36,6 +36,45 @@ export const metadata: Metadata = {
   verification: {
     google: 'your-google-verification-code', // Replace with actual code
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/icon.png', sizes: '192x192', type: 'image/png' },
+      { url: '/site-icon-512.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      {
+        rel: 'manifest',
+        url: '/site.webmanifest',
+      },
+    ],
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://gracegarden.co.in',
+    title: 'Grace Garden - Professional Elder Care & Assisted Living',
+    description: 'Compassionate assisted living and home care services for seniors in Wayanad, Kerala.',
+    siteName: 'Grace Garden',
+    images: [
+      {
+        url: 'https://gracegarden.co.in/site-icon-512.png',
+        width: 512,
+        height: 512,
+        alt: 'Grace Garden Logo',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Grace Garden - Elder Care Wayanad',
+    description: 'Compassionate assisted living and home care services for seniors in Wayanad, Kerala.',
+    images: ['https://gracegarden.co.in/site-icon-512.png'],
+  },
   other: {
     'google-site-verification': 'your-google-verification-code',
   },
@@ -48,27 +87,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <StructuredData />
-        {/* --- Canonical favicon + PWA manifest (Grace Garden) --- */}
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-        <meta name="theme-color" content="#ffffff" />
-
-        {/* --- Canonical Open Graph / Twitter image (single source) --- */}
-        <meta property="og:image" content="https://gracegarden.co.in/site-icon-512.png" />
-        <meta property="og:image:width" content="512" />
-        <meta property="og:image:height" content="512" />
-        <meta property="og:image:alt" content="Grace Garden Logo" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://gracegarden.co.in/site-icon-512.png" />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <StructuredData />
         {children}
         <Footer />
         <FloatingContactButtons />
