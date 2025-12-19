@@ -7,11 +7,13 @@ import Mission from '@/components/Mission'
 import GallerySection from '@/components/gallery/GallerySection'
 import ContactForm from '@/components/ContactForm'
 import Testimonials from '@/components/Testimonials'
+import ScrollHashUpdater from '@/components/ScrollHashUpdater'
 
 
 export default function Home() {
   return (
     <>
+      <ScrollHashUpdater />
       <Header />
       <Hero />
       <Services />

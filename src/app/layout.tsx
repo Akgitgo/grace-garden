@@ -62,9 +62,9 @@ export const metadata: Metadata = {
     siteName: 'Grace Garden',
     images: [
       {
-        url: 'https://gracegarden.co.in/site-icon-512.png',
-        width: 512,
-        height: 512,
+        url: 'https://gracegarden.co.in/images/Logo.jpg',
+        width: 1200,
+        height: 630,
         alt: 'Grace Garden Logo',
       },
     ],
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Grace Garden - Elder Care Wayanad',
     description: 'Compassionate assisted living and home care services for seniors in Wayanad, Kerala.',
-    images: ['https://gracegarden.co.in/site-icon-512.png'],
+    images: ['https://gracegarden.co.in/images/Logo.jpg'],
   },
   other: {
     'google-site-verification': 'your-google-verification-code',

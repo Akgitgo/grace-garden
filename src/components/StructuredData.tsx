@@ -8,14 +8,13 @@ export default function StructuredData() {
         "url": "https://gracegarden.co.in",
         "logo": {
             "@type": "ImageObject",
-            "url": "https://gracegarden.co.in/site-icon-512.png",
-            "width": 512,
-            "height": 512,
+            "url": "https://gracegarden.co.in/images/Logo.jpg",
+            "width": 1200,
+            "height": 400,
             "caption": "Grace Garden Logo"
         },
         "image": [
-            "https://gracegarden.co.in/site-icon-512.png",
-            "https://gracegarden.co.in/apple-touch-icon.png",
+            "https://gracegarden.co.in/images/Logo.jpg",
             "https://gracegarden.co.in/images/Logo.jpg"
         ],
         "description": "Grace Garden offers compassionate assisted living and home care services for seniors in Wayanad, Kerala. 24/7 medical care, nutritious meals, cultural activities, and comfortable accommodation options in a serene environment.",
@@ -90,11 +89,11 @@ export default function StructuredData() {
         "@id": "https://gracegarden.co.in/#business",
         "name": "Grace Garden",
         "image": [
-            "https://gracegarden.co.in/site-icon-512.png",
+            "https://gracegarden.co.in/images/Logo.jpg",
             "https://gracegarden.co.in/images/facility-1.jpg",
             "https://gracegarden.co.in/images/residents-1.jpeg"
         ],
-        "logo": "https://gracegarden.co.in/site-icon-512.png",
+        "logo": "https://gracegarden.co.in/images/Logo.jpg",
         "url": "https://gracegarden.co.in",
         "telephone": "+91-8089000467",
         "email": "gracegarden.care@gmail.com",

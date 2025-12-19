@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
-import { Menu, X } from 'react-feather';
+import { Menu, X, Phone } from 'react-feather';
 
 export default function Header() {
   const [isSticky, setIsSticky] = useState(false);
@@ -49,6 +49,8 @@ export default function Header() {
     { label: 'Contact', href: '#contact' },
   ];
 
+  const phoneNumber = "919100773861";
+
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-50">
@@ -68,6 +70,28 @@ export default function Header() {
                 aria-label="Main navigation"
               >
                 <div className="flex items-center justify-between gap-4">
+                  {/* Logo - Left */}
+                  <div className="flex items-center">
+                    <a
+                      href="#hero"
+                      onClick={(e) => scrollToSection(e, 'hero')}
+                      className="flex items-center gap-2 transition-transform hover:scale-105"
+                      aria-label="Grace Garden - Scroll to top"
+                    >
+                      <Image
+                        src="/images/Logo.jpg"
+                        alt="Grace Garden Logo"
+                        width={100}
+                        height={32}
+                        className="max-h-8 md:max-h-10 w-auto object-contain"
+                        priority
+                      />
+                      <span className="text-[#D4AF37] font-serif font-semibold text-xl md:text-2xl whitespace-nowrap">
+                        Grace Garden
+                      </span>
+                    </a>
+                  </div>
+
                   {/* Navigation Links - Center (Desktop only) */}
                   <div className="hidden lg:flex flex-1 justify-center">
                     <ul className="flex items-center gap-6 xl:gap-8">
@@ -86,30 +110,23 @@ export default function Header() {
                     </ul>
                   </div>
 
-                  {/* Logo - Right */}
-                  <div className="flex items-center ml-auto">
+                  {/* Right Side: Call Button (All screens) & Hamburger Menu (Mobile/Tablet only) */}
+                  <div className="flex items-center gap-3">
+                    {/* Call Button - Visible on all screens */}
                     <a
-                      href="#hero"
-                      onClick={(e) => scrollToSection(e, 'hero')}
-                      className="flex items-center transition-transform hover:scale-105"
-                      aria-label="Grace Garden - Scroll to top"
+                      href={`tel:+${phoneNumber}`}
+                      className="w-10 h-10 bg-primary rounded-full shadow-md flex items-center justify-center text-white hover:bg-primary/90 transition-all hover:scale-110 relative group"
+                      aria-label="Call Now"
                     >
-                      <Image
-                        src="/images/Logo.jpg"
-                        alt="Grace Garden Logo"
-                        width={100}
-                        height={32}
-                        className="max-h-8 md:max-h-10 w-auto object-contain"
-                        priority
-                      />
+                      <Phone size={18} />
+                      <span className="absolute right-full mr-3 bg-white text-slate-800 px-3 py-1 rounded-lg text-sm font-medium shadow-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+                        Call Now
+                      </span>
                     </a>
-                  </div>
-
-                  {/* Hamburger Menu Button - Mobile & Tablet only */}
-                  <div className="flex items-center gap-3 lg:hidden">
+                    {/* Hamburger Menu Button - Mobile & Tablet only */}
                     <button
                       onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                      className="p-2 text-slate-900 hover:bg-slate-100/20 rounded-full transition-colors flex items-center justify-center"
+                      className="p-2 text-slate-900 hover:bg-slate-100/20 rounded-full transition-colors flex items-center justify-center lg:hidden"
                       aria-label="Toggle mobile menu"
                       aria-expanded={isMobileMenuOpen}
                     >
@@ -134,6 +151,28 @@ export default function Header() {
                 aria-label="Main navigation"
               >
                 <div className="flex items-center justify-between gap-4">
+                  {/* Logo - Left */}
+                  <div className="flex items-center">
+                    <a
+                      href="#hero"
+                      onClick={(e) => scrollToSection(e, 'hero')}
+                      className="flex items-center gap-2 transition-transform hover:scale-105"
+                      aria-label="Grace Garden - Scroll to top"
+                    >
+                      <Image
+                        src="/images/Logo.jpg"
+                        alt="Grace Garden Logo"
+                        width={160}
+                        height={50}
+                        className="max-h-10 sm:max-h-12 md:max-h-14 w-auto object-contain"
+                        priority
+                      />
+                      <span className="text-[#D4AF37] font-serif font-semibold text-xl sm:text-2xl md:text-3xl whitespace-nowrap drop-shadow-lg">
+                        Grace Garden
+                      </span>
+                    </a>
+                  </div>
+
                   {/* Navigation Links - Center (Desktop only) */}
                   <div className="hidden lg:flex flex-1 justify-center">
                     <ul className="flex items-center gap-6 xl:gap-8">
@@ -152,30 +191,23 @@ export default function Header() {
                     </ul>
                   </div>
 
-                  {/* Logo - Right */}
-                  <div className="flex items-center ml-auto">
+                  {/* Right Side: Call Button (All screens) & Hamburger Menu (Mobile/Tablet only) */}
+                  <div className="flex items-center gap-3">
+                    {/* Call Button - Visible on all screens */}
                     <a
-                      href="#hero"
-                      onClick={(e) => scrollToSection(e, 'hero')}
-                      className="flex items-center transition-transform hover:scale-105"
-                      aria-label="Grace Garden - Scroll to top"
+                      href={`tel:+${phoneNumber}`}
+                      className="w-10 h-10 bg-primary rounded-full shadow-md flex items-center justify-center text-white hover:bg-primary/90 transition-all hover:scale-110 relative group backdrop-blur-sm"
+                      aria-label="Call Now"
                     >
-                      <Image
-                        src="/images/Logo.jpg"
-                        alt="Grace Garden Logo"
-                        width={160}
-                        height={50}
-                        className="max-h-10 sm:max-h-12 md:max-h-14 w-auto object-contain"
-                        priority
-                      />
+                      <Phone size={18} />
+                      <span className="absolute right-full mr-3 bg-white text-slate-800 px-3 py-1 rounded-lg text-sm font-medium shadow-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+                        Call Now
+                      </span>
                     </a>
-                  </div>
-
-                  {/* Hamburger Menu Button - Mobile & Tablet only */}
-                  <div className="flex items-center gap-3 lg:hidden">
+                    {/* Hamburger Menu Button - Mobile & Tablet only */}
                     <button
                       onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                      className="p-2 text-slate-900 hover:bg-slate-100/20 rounded-full transition-colors backdrop-blur-sm flex items-center justify-center"
+                      className="p-2 text-slate-900 hover:bg-slate-100/20 rounded-full transition-colors backdrop-blur-sm flex items-center justify-center lg:hidden"
                       aria-label="Toggle mobile menu"
                       aria-expanded={isMobileMenuOpen}
                     >

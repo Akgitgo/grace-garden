@@ -231,6 +231,37 @@ export default function Services() {
           </a>
         </div>
       </div>
+
+      {/* Brochure Section - Separate Section */}
+      <div className="max-w-7xl mx-auto px-4 mt-16 mb-12">
+        <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 text-center">
+          <h3 className="text-2xl md:text-3xl font-semibold text-primary mb-4">
+            Download Our Brochure
+          </h3>
+          <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
+            Learn more about Grace Garden's comprehensive care services, facilities, and accommodation options in our detailed brochure.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="/Grace Garden Senior Living (Care Home) Brochure (1).pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-primary hover:bg-primary/90 text-white text-base font-semibold shadow-md hover:shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+              aria-label="View Brochure"
+            >
+              View Brochure
+            </a>
+            <a
+              href="/Grace Garden Senior Living (Care Home) Brochure (1).pdf"
+              download
+              className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-white border-2 border-primary text-primary hover:bg-primary/5 text-base font-semibold shadow-md hover:shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+              aria-label="Download Brochure"
+            >
+              Download Brochure
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
