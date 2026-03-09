@@ -64,7 +64,7 @@ export default function Services() {
         <div className="relative w-full h-[500px] md:h-[600px] mb-8 rounded-2xl overflow-hidden shadow-lg">
           {/* Mobile Image */}
           <Image
-            src="/images/assisstedlivingphone.jpg"
+            src="/images/christmas celebration at home.jpeg"
             alt="Assisted Living Service - Comprehensive residential care"
             fill
             quality={85}
@@ -74,7 +74,7 @@ export default function Services() {
           />
           {/* Desktop Image */}
           <Image
-            src="/images/assisstedlivingservice.jpg"
+            src="/images/christmas celebration at home.jpeg"
             alt="Assisted Living Service - Professional elderly care"
             fill
             quality={85}
@@ -133,7 +133,7 @@ export default function Services() {
         <div className="relative w-full h-[500px] md:h-[600px] mb-8 rounded-2xl overflow-hidden shadow-lg">
           {/* Mobile Image */}
           <Image
-            src="/images/homeservicephone.jpg"
+            src="/images/newhero.jpeg"
             alt="Home Care Service - Professional care at home"
             fill
             quality={85}
@@ -143,7 +143,7 @@ export default function Services() {
           />
           {/* Desktop Image */}
           <Image
-            src="/images/Homeservice.jpg"
+            src="/images/newhero.jpeg"
             alt="Home Care Service - Certified caregivers"
             fill
             quality={85}

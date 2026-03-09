@@ -19,6 +19,18 @@ export interface MediaItem {
 export const galleryItems: MediaItem[] = [
     // Residents - Featured
     {
+        id: 'res-trip',
+        type: 'video',
+        category: 'residents',
+        src: '/videos/triptonearplace.mp4',
+        alt: 'Trip to a near place',
+        title: 'Community Trip',
+        width: 1920,
+        height: 1080,
+        duration: '4:20',
+        consentSigned: true
+    },
+    {
         id: 'res-1',
         type: 'image',
         category: 'residents',
@@ -36,13 +48,12 @@ export const galleryItems: MediaItem[] = [
         id: 'res-4',
         type: 'video',
         category: 'residents',
-        src: '/videos/residents-activity.mp4',
-        poster: '/images/residents-4-poster.jpg',
-        alt: 'Group activity session',
-        title: 'Activity Time',
+        src: '/videos/video1.mp4',
+        alt: 'News coverage of Grace Garden brand',
+        title: 'Media Coverage',
         width: 1920,
         height: 1080,
-        duration: '2:15',
+        duration: '2:18',
         consentSigned: true
     },
     {
@@ -92,6 +103,77 @@ export const galleryItems: MediaItem[] = [
         title: 'Exterior View',
         width: 900,
         height: 600,
+        consentSigned: true
+    },
+    {
+        id: 'res-bday1',
+        type: 'image',
+        category: 'residents',
+        src: '/images/birthday1.jpeg',
+        alt: 'Birthday Celebration 1',
+        title: 'Birthday Celebration',
+        width: 1200,
+        height: 900,
+        consentSigned: true
+    },
+    {
+        id: 'res-bday2',
+        type: 'image',
+        category: 'residents',
+        src: '/images/birthday2.jpeg',
+        alt: 'Birthday Celebration 2',
+        title: 'Joyful Moments',
+        width: 1200,
+        height: 900,
+        consentSigned: true
+    },
+    /*
+    {
+        id: 'res-bday3',
+        type: 'image',
+        category: 'residents',
+        src: '/images/birthday3.jpeg',
+        alt: 'Birthday Celebration 3',
+        title: 'Community Celebration',
+        width: 1200,
+        height: 900,
+        consentSigned: true
+    },
+    {
+        id: 'res-bday4',
+        type: 'image',
+        category: 'residents',
+        src: '/images/birthday4.jpeg',
+        alt: 'Birthday Celebration 4',
+        title: 'Resident Birthday',
+        width: 1200,
+        height: 900,
+        consentSigned: true
+    },
+    */
+    {
+        id: 'res-life',
+        type: 'video',
+        category: 'residents',
+        src: '/videos/lifeatgracegarden.mp4',
+        alt: 'Life at Grace Garden',
+        title: 'Life at Grace Garden',
+        width: 1920,
+        height: 1080,
+        duration: '3:15',
+        consentSigned: true
+    },
+
+    {
+        id: 'res-day',
+        type: 'video',
+        category: 'residents',
+        src: '/videos/dayatgracegarden.mp4',
+        alt: 'A Day at Grace Garden',
+        title: 'A Day at Grace Garden',
+        width: 1920,
+        height: 1080,
+        duration: '2:45',
         consentSigned: true
     },
     // Facilities - Featured
