@@ -131,6 +131,9 @@ export default function LandingPage() {
           <div className={styles.marqueeText} aria-hidden="true">
             <Home size={16} /> <strong>Only 3 rooms available this month.</strong> Secure your spot — <a onClick={scrollToContact}>book a free tour</a> or call <a href="tel:+919100773861">+91 91007-73861</a>
           </div>
+          <div className={styles.marqueeText} aria-hidden="true">
+            <Home size={16} /> <strong>Only 3 rooms available this month.</strong> Secure your spot — <a onClick={scrollToContact}>book a free tour</a> or call <a href="tel:+919100773861">+91 91007-73861</a>
+          </div>
         </div>
       </div>
 
