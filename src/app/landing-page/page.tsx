@@ -76,8 +76,8 @@ export default function LandingPage() {
             </button>
           </div>
           <div className={styles.heroTrust}>
-            <div className={styles.trustItem}><div className={styles.trustDot}></div>15+ Years of Care</div>
-            <div className={styles.trustItem}><div className={styles.trustDot}></div>200+ Families Served</div>
+            <div className={styles.trustItem}><div className={styles.trustDot}></div>Scenic Environment</div>
+            <div className={styles.trustItem}><div className={styles.trustDot}></div>Homely Atmosphere</div>
             <div className={styles.trustItem}><div className={styles.trustDot}></div>Certified Staff</div>
             <div className={styles.trustItem}><div className={styles.trustDot}></div>24/7 Nursing</div>
           </div>
@@ -90,10 +90,9 @@ export default function LandingPage() {
 
       <div className={styles.statsBar}>
         <div className={styles.statsInner}>
-          <div><span className={styles.statNum}>15+</span><span className={styles.statLabel}>Years Established</span></div>
-          <div><span className={styles.statNum}>200+</span><span className={styles.statLabel}>Residents Cared For</span></div>
+
           <div><span className={styles.statNum}>24/7</span><span className={styles.statLabel}>Nursing Support</span></div>
-          <div><span className={styles.statNum}>4.9★</span><span className={styles.statLabel}>Google Rating</span></div>
+          <div><span className={styles.statNum}>5★</span><span className={styles.statLabel}>Google Rating</span></div>
           <div><span className={styles.statNum}>₹0</span><span className={styles.statLabel}>Consultation Fee</span></div>
         </div>
       </div>
@@ -309,7 +308,7 @@ export default function LandingPage() {
       <footer className={styles.footer}>
         <div className={styles.footerLogo}><Leaf size={20} /> Grace Garden</div>
         <p>Compassionate Senior Care in Kerala since 2010</p>
-        <p style={{ marginTop: '6px' }}>Registered under Kerala Social Welfare Department · NABH Trained Staff</p>
+        <p style={{ marginTop: '6px' }}>Registered under Kerala Social Welfare Department · Trained Staff</p>
         <div className={styles.footerLinks}>
           <a href="#">Privacy Policy</a>
           <a href="#">Terms</a>
