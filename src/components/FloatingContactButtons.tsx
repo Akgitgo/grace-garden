@@ -8,7 +8,7 @@ export default function FloatingContactButtons() {
     const whatsappMessage = "Hello, I would like to know more about Grace Garden.";
 
     return (
-        <div className="fixed bottom-16 right-6 z-50 flex flex-col gap-4 items-end">
+        <div className="fixed bottom-32 right-6 z-50 flex flex-col gap-4 items-end">
             {/* WhatsApp Button */}
             <motion.a
                 href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`}
