@@ -93,8 +93,8 @@
   .marqueeText {
     display: flex;
     align-items: center;
-    gap: 40px;
-    padding-right: 40px;
+    gap: 20px;
+    padding-right: 20px;
     white-space: nowrap;
   }
 }
@@ -109,6 +109,10 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    gap: 8px;
+  }
+  .marqueeText {
+    padding-right: 0;
     gap: 8px;
   }
   .marqueeText:nth-child(2) {
