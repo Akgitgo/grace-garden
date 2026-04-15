@@ -189,22 +189,22 @@ export default function LandingPage() {
             <div className={styles.roomCard}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img className={styles.roomImg} src="/images/elegantroom.JPG" alt="Shared room" />
-              <div className={styles.roomInfo}><h3>Shared Room</h3><p>Comfortable shared accommodation with 24/7 nursing care, TV, and daily housekeeping.</p><div className={styles.roomPrice}>From ₹18,000/month</div></div>
+              <div className={styles.roomInfo}><h3>Shared Room</h3><p>Comfortable shared accommodation with 24/7 nursing care, TV, and daily housekeeping.</p></div>
             </div>
             <div className={styles.roomCard}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img className={styles.roomImg} src="/images/eliteroom.jpeg" alt="Semi-private room" />
-              <div className={styles.roomInfo}><h3>Semi-Private Room</h3><p>More privacy, attached bathroom, personalised caregiver, and family-oriented amenities.</p><div className={styles.roomPrice}>From ₹28,000/month</div></div>
+              <div className={styles.roomInfo}><h3>Semi-Private Room</h3><p>More privacy, attached bathroom, personalised caregiver, and family-oriented amenities.</p></div>
             </div>
             <div className={styles.roomCard}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img className={styles.roomImg} src="/images/luxuryroom.JPG" alt="Private AC room" />
-              <div className={styles.roomInfo}><h3>Private AC Room</h3><p>Fully air-conditioned private room with dedicated caregiver, premium meals, and daily doctor visits.</p><div className={styles.roomPrice}>From ₹45,000/month</div></div>
+              <div className={styles.roomInfo}><h3>Private AC Room</h3><p>Fully air-conditioned private room with dedicated caregiver, premium meals, and daily doctor visits.</p></div>
             </div>
             <div className={styles.roomCard}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img className={styles.roomImg} src="/images/entertainmenthall (2).JPG" alt="Garden area" />
-              <div className={styles.roomInfo}><h3>Garden &amp; Common Areas</h3><p>Lush tropical gardens, prayer hall, dining hall, and recreation rooms for daily enjoyment.</p><div className={styles.roomPrice}>Included in all plans</div></div>
+              <div className={styles.roomInfo}><h3>Garden &amp; Common Areas</h3><p>Lush tropical gardens, prayer hall, dining hall, and recreation rooms for daily enjoyment.</p></div>
             </div>
           </div>
           <div style={{ textAlign: 'center' }}>
