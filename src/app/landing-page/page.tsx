@@ -25,6 +25,7 @@ import {
 } from 'lucide-react';
 import styles from './landing.module.css';
 import ContactForm from '@/components/ContactForm';
+import Testimonials from '@/components/Testimonials';
 
 export default function LandingPage() {
   const scrollToContact = (e: React.MouseEvent) => {
@@ -231,42 +232,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <div className={styles.testimonials}>
-        <div className={styles.testimonialsInner}>
-          <div className={styles.divider}></div>
-          <h2 className={styles.sectionTitle}>What Families Say About Us</h2>
-          <p className={styles.sectionSub}>Real stories from Kerala families who trusted us with their most precious loved ones.</p>
-          <div className={styles.testimonialGrid}>
-            <div className={styles.testimonialCard}>
-              <div className={styles.testiHeader}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img className={styles.testiAvatar} src="https://i.pravatar.cc/80?img=47" alt="Priya Nair" />
-                <div><div className={styles.testiName}>Priya Nair</div><div className={styles.testiLoc}>Daughter, based in Dubai</div></div>
-              </div>
-              <div className={styles.stars}>★★★★★</div>
-              <p className={styles.testimonialText}>"My mother had been lonely after my father passed. Since she joined Grace Garden, she has found friends, purpose, and joy. The staff treats her like their own family."</p>
-            </div>
-            <div className={styles.testimonialCard}>
-              <div className={styles.testiHeader}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img className={styles.testiAvatar} src="https://i.pravatar.cc/80?img=52" alt="Suresh Menon" />
-                <div><div className={styles.testiName}>Suresh Menon</div><div className={styles.testiLoc}>Son, based in UK</div></div>
-              </div>
-              <div className={styles.stars}>★★★★★</div>
-              <p className={styles.testimonialText}>"As an NRI, I was worried leaving my father alone in Kerala. Grace Garden gives me daily WhatsApp updates. My father is healthier and happier than ever. Truly a blessing."</p>
-            </div>
-            <div className={styles.testimonialCard}>
-              <div className={styles.testiHeader}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img className={styles.testiAvatar} src="https://i.pravatar.cc/80?img=44" alt="Dr Anitha" />
-                <div><div className={styles.testiName}>Dr. Anitha Krishnan</div><div className={styles.testiLoc}>Daughter, Kochi</div></div>
-              </div>
-              <div className={styles.stars}>★★★★★</div>
-              <p className={styles.testimonialText}>"The food, the care, the medical support — everything is excellent. My mother's blood sugar improved significantly with the special diet prepared for her. Highly recommended."</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Testimonials />
 
       <div id="contact-form">
         <ContactForm />
