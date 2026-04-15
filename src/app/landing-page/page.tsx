@@ -26,6 +26,7 @@ import {
 import styles from './landing.module.css';
 import ContactForm from '@/components/ContactForm';
 import Testimonials from '@/components/Testimonials';
+import { motion } from 'framer-motion';
 
 export default function LandingPage() {
   const scrollToContact = (e: React.MouseEvent) => {
@@ -66,23 +67,59 @@ export default function LandingPage() {
         <div className={styles.heroBg} style={{ backgroundImage: "url('/images/Exterior-View.jpg')" }}></div>
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroInner}>
-          <div className={styles.heroBadge}>Trusted Senior Care · Kerala</div>
-          <h1 className={styles.heroTitle}>A Garden of <em>Love &amp; Grace</em><br />for Your Loved Ones</h1>
-          <p className={styles.heroDesc}>Offering comprehensive residential care with 24/7 medical support in our serene Wayanad facility, alongside personalized, professional nursing assistance delivered by certified caregivers in the comfort of your own home.</p>
-          <div className={styles.heroCtas}>
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className={styles.heroBadge}
+          >
+            Trusted Senior Care · Kerala
+          </motion.div>
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+            className={styles.heroTitle}
+          >
+            A Garden of <em>Love &amp; Grace</em><br />for Your Loved Ones
+          </motion.h1>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
+            className={styles.heroDesc}
+          >
+            Offering comprehensive residential care with 24/7 medical support in our serene Wayanad facility, alongside personalized, professional nursing assistance delivered by certified caregivers in the comfort of your own home.
+          </motion.p>
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            viewport={{ once: true }}
+            className={styles.heroCtas}
+          >
             <a href="tel:+919100773861" className={styles.btnPrimary}>
               <Phone size={16} /> Call Now — Free Consultation
             </a>
             <button onClick={scrollToContact} className={styles.btnOutlineWhite}>
               <ClipboardList size={16} /> Get a Callback
             </button>
-          </div>
-          <div className={styles.heroTrust}>
+          </motion.div>
+          <motion.div 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            viewport={{ once: true }}
+            className={styles.heroTrust}
+          >
             <div className={styles.trustItem}><div className={styles.trustDot}></div>Scenic Environment</div>
             <div className={styles.trustItem}><div className={styles.trustDot}></div>Homely Atmosphere</div>
             <div className={styles.trustItem}><div className={styles.trustDot}></div>Certified Staff</div>
             <div className={styles.trustItem}><div className={styles.trustDot}></div>24/7 Nursing</div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -236,21 +273,9 @@ export default function LandingPage() {
         <ContactForm />
       </div>
 
-      <footer className={styles.footer}>
-        <div className={styles.footerLogo}><Leaf size={20} /> Grace Garden</div>
-        <p>Compassionate Senior Care in Kerala since 2010</p>
-        <p style={{ marginTop: '6px' }}>Registered under Kerala Social Welfare Department · Trained Staff</p>
-        <div className={styles.footerLinks}>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms</a>
-          <a href="#">Sitemap</a>
-          <a onClick={scrollToContact} style={{ cursor: 'pointer' }}>Contact Us</a>
-          <a href="#">Careers</a>
-        </div>
-      </footer>
+
 
       <a href="tel:+919100773861" className={styles.floatCall} title="Call Now"><Phone size={22} /></a>
-      <a href="https://wa.me/919100773861?text=Hi, I want to enquire about Grace Garden senior care" className={styles.floatWa} target="_blank" rel="noreferrer"><MessageCircle size={16} /> WhatsApp</a>
 
     </div>
   );
