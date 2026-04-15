@@ -104,23 +104,23 @@ export default function LandingPage() {
         <div className={styles.galleryRow}>
           <div className={`${styles.galleryCell} ${styles.galleryMain}`}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className={styles.galleryImg} src="/images/Exterior-View.jpg" alt="Grace Garden main facility" style={{ height: '416px' }} />
+            <img className={styles.galleryImg} src="/images/Exterior-View.jpg" alt="Grace Garden building exterior" />
           </div>
           <div className={styles.galleryCell}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className={styles.galleryImg} src="/images/Emergency-Room.jpg" alt="Medical care" />
+            <img className={styles.galleryImg} src="/images/residents-1.jpeg" alt="Opening ceremony celebration" />
           </div>
           <div className={styles.galleryCell}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className={styles.galleryImg} src="/images/residents-1.jpeg" alt="Yoga activity" />
+            <img className={styles.galleryImg} src="/images/birthday1.jpeg" alt="Birthday celebration" />
           </div>
           <div className={styles.galleryCell}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className={styles.galleryImg} src="/images/residents-3.jpeg" alt="Resident" />
+            <img className={styles.galleryImg} src="/images/facility-1.jpg" alt="Private dining hall" />
           </div>
           <div className={styles.galleryCell}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className={styles.galleryImg} src="/images/facility-1.jpg" alt="Dining" />
+            <img className={styles.galleryImg} src="/images/entertainmenthall (2).JPG" alt="Entertainment hall" />
           </div>
         </div>
       </section>
@@ -134,11 +134,11 @@ export default function LandingPage() {
         <div className={styles.aboutText}>
           <div className={styles.divider}></div>
           <h2 className={styles.sectionTitle}>Who We Are</h2>
-          <p style={{ fontSize: '15px', color: 'var(--text-mid)', lineHeight: '1.8', marginBottom: '18px' }}>
-            Grace Garden was founded on one simple belief — every senior deserves to live with dignity, love, and joy. Nestled in serene surroundings in Kerala, weve been a trusted home for hundreds of seniors since 2010.
+          <p style={{ fontSize: '16px', color: 'var(--green)', fontStyle: 'italic', lineHeight: '1.8', marginBottom: '18px', fontWeight: '500' }}>
+            "Our mission is to provide dignity, comfort, and compassionate care to elders in a home-like environment."
           </p>
           <p style={{ fontSize: '15px', color: 'var(--text-mid)', lineHeight: '1.8', marginBottom: '24px' }}>
-            Our team of certified nurses, caregivers, and doctors work together to deliver personalised care — treating every resident like family. We are especially trusted by NRI families who want the best care for their parents back in Kerala.
+            Grace Garden is a haven where professional caregivers dedicate themselves to elderly support of the highest quality. Our top priority is bringing joy, peace, and genuine warmth to the lives of our residents and their families.
           </p>
           <a href="tel:+919100773861" className={styles.btnPrimary}><Phone size={16} /> Talk to a Care Advisor</a>
         </div>
