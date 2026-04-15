@@ -129,7 +129,7 @@ export default function LandingPage() {
         <div className={styles.aboutImgWrap}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img className={styles.aboutImg} src="/images/residents-2.jpeg" alt="Caregiver with senior" />
-          <div className={styles.aboutImgBadge}><Leaf size={14} /> Est. 2010 · Ernakulam, Kerala</div>
+          <div className={styles.aboutImgBadge}><Leaf size={14} /> Wayanad, Kerala</div>
         </div>
         <div className={styles.aboutText}>
           <div className={styles.divider}></div>
