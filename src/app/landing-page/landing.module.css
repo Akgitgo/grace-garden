@@ -65,7 +65,57 @@
 .trustItem { display: flex; align-items: center; gap: 7px; font-size: 13px; opacity: 0.8; }
 .trustDot { width: 7px; height: 7px; background: #A8E6CF; border-radius: 50%; flex-shrink: 0; }
 
-.urgentStrip { background: var(--red); color: white; text-align: center; padding: 13px 20px; font-size: 14px; font-weight: 500; display:flex; align-items:center; justify-content:center; gap: 6px;}
+.urgentStrip { 
+  background: var(--red); 
+  color: white; 
+  padding: 13px 20px; 
+  font-size: 14px; 
+  font-weight: 500; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 8px;
+  overflow: hidden;
+}
+
+@media(max-width: 768px) {
+  .urgentStrip {
+    padding: 13px 0;
+    justify-content: flex-start;
+  }
+  
+  .marqueeInner {
+    display: flex;
+    width: max-content;
+    animation: marquee 25s linear infinite;
+  }
+  
+  .marqueeText {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-right: 40px;
+    white-space: nowrap;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media(min-width: 769px) {
+  .marqueeInner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 8px;
+  }
+  .marqueeText:nth-child(2) {
+    display: none;
+  }
+}
+
 .urgentStrip a { color: #FFD6D0; font-weight: 700; text-decoration: underline; cursor: pointer; }
 
 .statsBar { background: var(--white); border-bottom: 1px solid var(--cream-dark); padding: 22px; }
