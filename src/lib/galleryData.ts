@@ -176,6 +176,30 @@ export const galleryItems: MediaItem[] = [
         duration: '2:45',
         consentSigned: true
     },
+    {
+        id: 'res-home1',
+        type: 'image',
+        category: 'residents',
+        src: '/images/feelislikehome1.jpeg',
+        alt: 'Moment of joy and comfort at Grace Garden',
+        title: 'Feels Like Home',
+        caption: 'Moments of joy and comfort',
+        width: 1200,
+        height: 900,
+        consentSigned: true
+    },
+    {
+        id: 'res-home2',
+        type: 'image',
+        category: 'residents',
+        src: '/images/feelislikehome2.jpeg',
+        alt: 'Comfort and warmth in the community',
+        title: 'At Home at Grace',
+        caption: 'Moments of joy and comfort',
+        width: 1200,
+        height: 900,
+        consentSigned: true
+    },
     // Facilities - Featured
     {
         id: 'fac-1',

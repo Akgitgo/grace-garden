@@ -67,7 +67,7 @@ export default function LandingPage() {
         <div className={styles.heroBg} style={{ backgroundImage: "url('/images/Exterior-View.jpg')" }}></div>
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroInner}>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -76,7 +76,7 @@ export default function LandingPage() {
           >
             Trusted Senior Care · Kerala
           </motion.div>
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -85,7 +85,7 @@ export default function LandingPage() {
           >
             A Garden of <em>Love &amp; Grace</em><br />for Your Loved Ones
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -94,7 +94,7 @@ export default function LandingPage() {
           >
             Offering comprehensive residential care with 24/7 medical support in our serene Wayanad facility, alongside personalized, professional nursing assistance delivered by certified caregivers in the comfort of your own home.
           </motion.p>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
@@ -108,7 +108,7 @@ export default function LandingPage() {
               <ClipboardList size={16} /> Get a Callback
             </button>
           </motion.div>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
@@ -143,6 +143,7 @@ export default function LandingPage() {
           <div><span className={styles.statNum}>24/7</span><span className={styles.statLabel}>Nursing Support</span></div>
           <div><span className={styles.statNum}>5★</span><span className={styles.statLabel}>Google Rating</span></div>
           <div><span className={styles.statNum}>₹0</span><span className={styles.statLabel}>Consultation Fee</span></div>
+          <div><span className={styles.statNum}>Zero</span><span className={styles.statLabel}>Hidden Charges</span></div>
         </div>
       </div>
 
@@ -235,12 +236,12 @@ export default function LandingPage() {
           <div className={styles.roomsGrid}>
             <div className={styles.roomCard}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img className={styles.roomImg} src="/images/elegantroom.JPG" alt="Shared room" />
+              <img className={styles.roomImg} src="/images/eliteroom.jpeg" alt="Shared room" />
               <div className={styles.roomInfo}><h3>Shared Room</h3><p>Comfortable shared accommodation with 24/7 nursing care, TV, and daily housekeeping.</p></div>
             </div>
             <div className={styles.roomCard}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img className={styles.roomImg} src="/images/eliteroom.jpeg" alt="Semi-private room" />
+              <img className={styles.roomImg} src="/images/elegantroom.JPG" alt="Semi-private room" />
               <div className={styles.roomInfo}><h3>Semi-Private Room</h3><p>More privacy, attached bathroom, personalised caregiver, and family-oriented amenities.</p></div>
             </div>
             <div className={styles.roomCard}>
