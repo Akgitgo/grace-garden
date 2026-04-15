@@ -66,7 +66,7 @@ export default function LandingPage() {
         <div className={styles.heroInner}>
           <div className={styles.heroBadge}>Trusted Senior Care · Kerala</div>
           <h1 className={styles.heroTitle}>A Garden of <em>Love &amp; Grace</em><br />for Your Loved Ones</h1>
-          <p className={styles.heroDesc}>Compassionate residential care for seniors in the heart of Kerala — warm, homely, and staffed round the clock with dedicated caregivers.</p>
+          <p className={styles.heroDesc}>Offering comprehensive residential care with 24/7 medical support in our serene Wayanad facility, alongside personalized, professional nursing assistance delivered by certified caregivers in the comfort of your own home.</p>
           <div className={styles.heroCtas}>
             <a href="tel:+919100773861" className={styles.btnPrimary}>
               <Phone size={16} /> Call Now — Free Consultation
@@ -78,7 +78,7 @@ export default function LandingPage() {
           <div className={styles.heroTrust}>
             <div className={styles.trustItem}><div className={styles.trustDot}></div>15+ Years of Care</div>
             <div className={styles.trustItem}><div className={styles.trustDot}></div>200+ Families Served</div>
-            <div className={styles.trustItem}><div className={styles.trustDot}></div>NABH Certified Staff</div>
+            <div className={styles.trustItem}><div className={styles.trustDot}></div>Certified Staff</div>
             <div className={styles.trustItem}><div className={styles.trustDot}></div>24/7 Nursing</div>
           </div>
         </div>
@@ -157,9 +157,9 @@ export default function LandingPage() {
           <div className={styles.serviceCard}><div className={styles.serviceIcon}><Bath size={24} /></div><h3>Personal Hygiene Care</h3><p>Trained caregivers assist with bathing, grooming, and mobility with dignity.</p></div>
           <div className={styles.serviceCard}><div className={styles.serviceIcon}><Smartphone size={24} /></div><h3>NRI Family Support</h3><p>Regular WhatsApp updates, video calls, and monthly care reports for families abroad.</p></div>
         </div>
-        
+
         <div className={styles.ctaCards}>
-          <button className={`${styles.ctaCard} ${styles.ctaCall}`} onClick={() => window.location.href='tel:+919100773861'}>
+          <button className={`${styles.ctaCard} ${styles.ctaCall}`} onClick={() => window.location.href = 'tel:+919100773861'}>
             <span className={styles.ctaCardIcon}><Phone size={26} /></span>
             <span className={styles.ctaCardTitle}>Call Us Now</span>
             <span className={styles.ctaCardSub}>Speak to our care team. Free consultation.</span>
