@@ -22,6 +22,7 @@ import {
   Mail,
   CalendarCheck,
   ArrowUpRight,
+  Instagram,
 } from 'lucide-react';
 import styles from './landing.module.css';
 import ContactForm from '@/components/ContactForm';
@@ -54,6 +55,9 @@ export default function LandingPage() {
           </div>
         </div>
         <div className={styles.navCtas}>
+          <a href="https://www.instagram.com/gracegarden_care?igsh=OW1icHRscjU4ZTR4&utm_source=qr" target="_blank" rel="noopener noreferrer" className={styles.navBtnInsta}>
+            <Instagram size={14} /> Instagram
+          </a>
           <a href="/" className={styles.navBtnOutline}>
             <Globe size={14} /> Visit Website
           </a>

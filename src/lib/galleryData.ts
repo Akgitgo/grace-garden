@@ -82,6 +82,18 @@ export const galleryItems: MediaItem[] = [
         consentSigned: true
     },
     {
+        id: 'res-vishu',
+        type: 'video',
+        category: 'residents',
+        src: '/videos/happyvishu.mp4',
+        alt: 'Residents celebrating Vishu festival',
+        title: 'Happy Vishu Celebration',
+        width: 1920,
+        height: 1080,
+        duration: '1:45',
+        consentSigned: true
+    },
+    {
         id: 'res-7',
         type: 'video',
         category: 'residents',

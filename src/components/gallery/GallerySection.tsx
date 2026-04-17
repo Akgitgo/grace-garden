@@ -8,6 +8,7 @@ import TabFilters from './TabFilters';
 import MasonryGrid from './MasonryGrid';
 import LightboxModal from './LightboxModal';
 import { AnimatePresence } from 'framer-motion';
+import { Instagram } from 'lucide-react';
 
 export default function GallerySection() {
     const [activeTab, setActiveTab] = useState<'residents' | 'facilities'>('residents');
@@ -64,6 +65,19 @@ export default function GallerySection() {
 
                 {/* Masonry Grid */}
                 <MasonryGrid items={filteredItems} onItemClick={setSelectedItem} />
+
+                {/* Instagram CTA */}
+                <div className="mt-16 text-center">
+                    <a
+                        href="https://www.instagram.com/gracegarden_care?igsh=OW1icHRscjU4ZTR4&utm_source=qr"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] text-white rounded-full font-bold hover:scale-105 transition-transform duration-300 shadow-xl"
+                    >
+                        <Instagram size={24} />
+                        Follow @gracegarden_care on Instagram
+                    </a>
+                </div>
 
                 {/* Lightbox Modal */}
                 <AnimatePresence>
