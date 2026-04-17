@@ -32,7 +32,7 @@ export default function Footer() {
 
               {/* Social Links */}
               <div className="flex gap-4">
-                <a href="https://instagram.com/gracegarden_care" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#1a3d32] flex items-center justify-center text-white hover:bg-primary hover:text-white transition-all">
+                <a href="https://www.instagram.com/gracegarden_care?igsh=OW1icHRscjU4ZTR4&utm_source=qr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#1a3d32] flex items-center justify-center text-white hover:bg-primary hover:text-white transition-all">
                   <Instagram size={20} />
                 </a>
                 <a href="https://youtube.com/@GraceGardenCare" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#1a3d32] flex items-center justify-center text-white hover:bg-primary hover:text-white transition-all">
