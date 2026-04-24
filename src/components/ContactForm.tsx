@@ -2,8 +2,10 @@
 
 import { Send, Phone, Mail, MapPin, ChevronRight, ChevronDown, Loader2 } from 'lucide-react';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function ContactForm() {
+  const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
@@ -29,8 +31,8 @@ export default function ContactForm() {
         body: JSON.stringify(data),
       });
 
-      setSubmitStatus('success');
       form.reset();
+      router.push('/success');
     } catch (error) {
       console.error('Error submitting form:', error);
       setSubmitStatus('error');
@@ -69,24 +71,12 @@ export default function ContactForm() {
           <div id="enquire" className="lg:col-span-3 bg-slate-50 p-8 md:p-12 rounded-3xl shadow-xl h-full">
             <h3 className="text-2xl font-serif text-slate-900 mb-6">Send us a Message</h3>
 
-            {submitStatus === 'success' ? (
-              <div className="bg-green-50 border border-green-200 rounded-2xl p-8 text-center animate-in fade-in zoom-in duration-300">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Send className="text-green-600" size={32} />
-                </div>
-                <h4 className="text-xl font-bold text-green-800 mb-2">Message Sent!</h4>
-                <p className="text-green-700 mb-6">
-                  Thank you for reaching out. Our team will contact you shortly.
-                </p>
-                <button
-                  onClick={() => setSubmitStatus('idle')}
-                  className="text-green-700 font-semibold hover:text-green-900 underline"
-                >
-                  Send another message
-                </button>
+            {submitStatus === 'error' && (
+              <div className="bg-red-50 border border-red-200 rounded-2xl p-4 text-center mb-6">
+                <p className="text-red-700">Something went wrong. Please try again.</p>
               </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
+            )}
+            <form onSubmit={handleSubmit} className="space-y-6">
                 {/* Row 1: Full Name & Phone Number */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -197,7 +187,6 @@ export default function ContactForm() {
                   </p>
                 </div>
               </form>
-            )}
           </div>
 
           {/* Right Column: Get in Touch (40%) */}

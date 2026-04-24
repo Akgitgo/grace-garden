@@ -105,10 +105,10 @@ export default function LandingPage() {
             viewport={{ once: true }}
             className={styles.heroCtas}
           >
-            <a href="tel:+919100773861" className={styles.btnPrimary}>
+            <a href="tel:+919100773861" className={styles.btnOutlineWhite}>
               <Phone size={16} /> Call Now — Free Consultation
             </a>
-            <button onClick={scrollToContact} className={styles.btnOutlineWhite}>
+            <button onClick={scrollToContact} className={styles.btnPrimary}>
               <ClipboardList size={16} /> Get a Callback
             </button>
           </motion.div>
